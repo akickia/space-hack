@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Shanti&family=Share:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  color:#ffffff;
+  font-family: 'Share';
+  margin: auto;
+}
+
+.title, .astronaut, .title--small, .img__const, .footer {
+  grid-column: span 2;
+}
+
+.title, .img__const {
+  background-color: #2E2D31;
+  padding: 3rem;
+}
+
+.img__planet, .img__space {
+  background-color: #5D44AB;
+  padding: 3rem;
+}
+
+.img__helmet, .img__station {
+  background-color:  #7654B4;
+  padding: 3rem;
+}
+
+.img__gun {
+  background-color: #967ECB;
+  padding: 3rem;
+}
+
+.img__ship, .title--small {
+  background-color: #0E002C;
+  padding: 3rem;
+}
+
+.title, .title--small {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  padding: 2rem;
+}
+
+.astronaut {
+  background-color: rgb(81, 55, 121);
+}
+
+.img__astronaut {
+  max-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+}
+
+.img__const {
+  padding: 6.313rem 6.688rem 7.438rem 6.938rem;
+}
+
+/*--CONTACT--*/
+.contact, .form {
+  display: none;
+  background-color: #05010B;
+  grid-column: span 2;
+  flex-direction: column;
+}
+
+.contact__title {
+  font-size: 8rem;
+  line-height: 9rem;
+  text-transform: uppercase;
+}
+
+.contact__text {
+  font-size: 2rem;
+  line-height: 36px;
+}
+
+.form {
+  align-items: flex-end;
+}
+
+.form__input {
+  align-self: stretch;
+  margin: 1.375rem 0;
+  background-color: #D9D9D9;
+}
+
+.form__input--small {
+  height: 6.875rem;
+}
+
+.form__input--large {
+  height: 15.625rem
+}
+
+.form__btn {
+  font-family: 'Share';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  padding: 2.313rem 6.875rem;
+  background-color: #967ECB;
+}
+
+/*--FOOTER--*/
+.footer {
+  background-color:  #654C8C;
+  color: #000000;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  padding-bottom: 6rem
+}
+
+.text--bold {
+  grid-column: span 2;
+  font-family: 'Share';
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.438rem;
+}
+
+.info {
+  padding-top: 2.188rem;
+  padding-right: 1.4rem;
+  font-family: "Shanti";
+}
+
+.info__heading {
+  font-size: 1.5rem;
+  line-height: 1.938rem;
+  font-weight: 400;
+}
+
+.info__text {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+
+
+@media screen and (min-width: 900px) {
+  .wrapper, .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .title {
+    grid-row: span 2;
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 6.75rem;
+  }
+
+  .astronaut, .footer, .text--bold {
+    grid-column: span 4;
+  }
+
+  .title--small {
+    grid-column: 1 / span 2;
+  }
+
+  .img__const {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 2;
+  }
+  
+  .contact, .form {
+    display: flex;
+    padding: 3.3rem
+  }
+
+  .footer {
+    padding: 12.938rem 14.625rem 12.938rem 7.375rem;
+  }
+  
+  .text--bold {
+    font-size: 2.25rem;
+    line-height: 2.563rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .info {
+    padding-top: 3.563rem;
+    padding-right: 8rem;
+    font-family: "Shanti";
+  }
+
+}
